@@ -1,7 +1,13 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div>
-    <p>Hello World</p>
-  </div>
+  <v-app>
+    <v-layout>
+      <v-main>
+        <router-view v-slot="{ Component }">
+          <transition name="slide-left">
+            <component :is="Component" />
+          </transition>
+        </router-view>
+      </v-main>
+    </v-layout>
+  </v-app>
 </template>

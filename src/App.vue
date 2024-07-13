@@ -3,9 +3,7 @@
     <v-layout>
       <v-main>
         <router-view v-slot="{ Component }">
-          <transition name="slide-left">
-            <component :is="Component" />
-          </transition>
+          <component :is="Component" />
         </router-view>
       </v-main>
     </v-layout>

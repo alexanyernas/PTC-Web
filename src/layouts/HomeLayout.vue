@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Vue Components
+// Import Vue Components
 import HomeMenu from '@/components/Navigation/HomeMenu.vue';
 </script>
 

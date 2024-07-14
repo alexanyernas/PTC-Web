@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Vue Components
+// Import Vue Components
 import ObjectiveCard from '@/components/Cards/ObjectiveCard.vue';
 
 interface Objective {
@@ -11,17 +11,17 @@ interface Objective {
 const objectives = <Objective[]>[
     {
         title: 'Explorar las Aplicaciones de los Tintes Capilares', 
-        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.', 
+        paragraph: 'Vegetales, minerales y sintéticos, incluyendo ejemplos específicos de cada tipo.', 
         color: '#49BBBD4D'
     },
     {
         title: 'Analizar las Características de los Tintes Capilares', 
-        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.', 
+        paragraph: 'Formulación química y sus efectos sobre el cabello y el cuero cabelludo.', 
         color: '#5B72EE4D'
     },
     {
         title: 'Diferenciar entre los Distintos Tipos de Tintes Capilares', 
-        paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.', 
+        paragraph: 'Comprender sus ventajas, desventajas y usos recomendados en el cabello.', 
         color: '#9DCCFF4D'
     }
 ];

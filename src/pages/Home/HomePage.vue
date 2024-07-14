@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Vue Components
+// Import Vue Components
 import HeroSection from '@/components/Home/HeroSection.vue';
 import ObjectivesSection from '@/components/Home/ObjectivesSection.vue';
 import LessionsSection from '@/components/Home/LessionsSection.vue';

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 // Import Vue Functions
 import { useRouter } from 'vue-router';
+import { useLessionStore } from '@/plugins/pinia';
 
 // Import Vue Components
 import LessionItemMenu from './LessionItemMenu.vue';
@@ -9,6 +10,7 @@ import LessionItemMenu from './LessionItemMenu.vue';
 import { lessionItems } from '@/data/lessionItems';
 
 const router = useRouter();
+const lessionStore = useLessionStore();
 </script>
 
 <template>
@@ -32,11 +34,12 @@ const router = useRouter();
         </template>
         <v-list nav density="compact">
             <lession-item-menu 
-                :key="index"
-                v-for="(item, index) in lessionItems" 
+                v-for="item in lessionItems" 
+                :key="item.id"
                 :title="item.title"
                 :color="item.color"
                 :value="item.value"
+                @click="lessionStore.setCurrentLession(item)"
             />
         </v-list>
     </v-navigation-drawer>

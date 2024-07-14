@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Vue Components
+// Import Vue Components
 import CommentCard from '@/components/Cards/CommentCard.vue';
 
 interface Comment {

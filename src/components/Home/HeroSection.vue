@@ -1,11 +1,23 @@
 <script setup lang="ts">
 // Import Vue Functions
 import { useRouter } from 'vue-router';
+import { useLessionStore } from '@/plugins/pinia';
+
+// Import Data
+import { lessionItems } from '@/data/lessionItems';
 
 // Import Assets
 import girl from '@/assets/images/girl.png'
 
 const router = useRouter();
+const lessionStore = useLessionStore();
+
+const handlePushLessions = () => {
+    lessionStore.setCurrentLession(lessionItems[0]);
+    router.push({
+        name: 'CurrentLession'
+    });
+}
 </script>
 
 <template>
@@ -20,9 +32,7 @@ const router = useRouter();
                     color="white"
                     variant="tonal"
                     text="Iniciar Curso"
-                    @click="router.push({
-                        name: 'CurrentLession'
-                    })"
+                    @click="handlePushLessions"
                 />
             </v-col>
             <v-col cols="12" lg="5">

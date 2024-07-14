@@ -1,5 +1,5 @@
 <script setup lang="ts">
-// Vue Components
+// Import Vue Components
 import LessionCard from '@/components/Cards/LessionCard.vue';
 
 interface Lession {
@@ -12,17 +12,17 @@ const lessions = <Lession[]>[
     {
         title: 'Estructura y Funciones del Cabello', 
         image: '1-min.jpg',
-        size: 5
+        size: 3
     },
     {
         title: 'Aplicación de los Tintes Capilares', 
         image: '2-min.jpg',
-        size: 5
+        size: 3
     },
     {
         title: 'Clasificación de los Tintes Capilares', 
         image: '3-min.jpg',
-        size: 5
+        size: 6
     }
 ];
 </script>

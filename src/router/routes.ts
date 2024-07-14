@@ -19,6 +19,20 @@ export const routes: VueRouter.RouteRecordRaw[] = [
         ]
     },
     {
+        path: '/lession',
+        redirect: {
+            name: 'CurrentLession'
+        },
+        component: () => import ('@/layouts/LessionLayout.vue'),
+        children: [
+            {
+                path: '',
+                name: 'CurrentLession',
+                component: () => import('@/pages/Lession/CurrentLessionPage.vue')
+            }
+        ]
+    },
+    {
         path: '/:pathMatch(.*)*',
         component: () => import('@/pages/NotFound/NotFoundPage.vue'),
         meta: {

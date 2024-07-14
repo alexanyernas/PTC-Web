@@ -1,6 +1,11 @@
 <script setup lang="ts">
+// Import Vue Functions
+import { useRouter } from 'vue-router';
+
 // Import Assets
 import girl from '@/assets/images/girl.png'
+
+const router = useRouter();
 </script>
 
 <template>
@@ -15,6 +20,9 @@ import girl from '@/assets/images/girl.png'
                     color="white"
                     variant="tonal"
                     text="Iniciar Curso"
+                    @click="router.push({
+                        name: 'CurrentLession'
+                    })"
                 />
             </v-col>
             <v-col cols="12" lg="5">

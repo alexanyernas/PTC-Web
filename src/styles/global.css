@@ -38,6 +38,10 @@
     background-color: var(--primary-color);
 }
 
+.bg-tertiary-color {
+    background-color: var(--tertiary-color);
+}
+
 .bg-dark-blue {
     background-color: var(--dark-blue-color);
 }

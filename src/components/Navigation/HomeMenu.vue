@@ -17,7 +17,7 @@ const { mdAndDown } = useDisplay();
             <v-col cols="2">
                 <v-img v-if="!mdAndDown" :src="logo" alt="Logo" height="60" />
             </v-col>
-            <v-col cols="2">
+            <v-col :cols="mdAndDown ? 6 : 2">
                 <div class="d-flex justify-center align-center">
                     <p class="mr-2 text-white">Bienvenid@</p>
                     <v-icon icon="mdi-menu-down mb-1" color="#FFF"/>

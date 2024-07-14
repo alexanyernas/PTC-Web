@@ -11,25 +11,25 @@ interface Comment {
 
 const comments = <Comment[]>[
     {
-        image: 'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light',
+        image: 'https://randomuser.me/api/portraits/men/40.jpg',
         person: 'Alexanyer Naranjo',
         comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         location: 'Universidad Central de Venezuela'
     },
     {
-        image: 'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light',
+        image: 'https://randomuser.me/api/portraits/women/40.jpg',
         person: 'Alejandra Giannattasio',
         comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         location: 'Universidad Central de Venezuela'
     },
     {
-        image: 'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light',
+        image: 'https://randomuser.me/api/portraits/men/42.jpg',
         person: 'Rafael Contreras',
         comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         location: 'Universidad Central de Venezuela'
     },
     {
-        image: 'https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light',
+        image: 'https://randomuser.me/api/portraits/women/51.jpg',
         person: 'Yarima Contreras',
         comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
         location: 'Universidad Central de Venezuela'

@@ -32,6 +32,7 @@ const objectives = <Objective[]>[
         <v-row justify="space-around" align="center">
             <v-col cols="12" lg="3" v-for="(objective, index) in objectives" :key="index">
                 <objective-card 
+                    class="mx-auto"
                     :title="objective.title"
                     :color="objective.color"
                     :paragraph="objective.paragraph"

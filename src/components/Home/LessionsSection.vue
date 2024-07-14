@@ -35,6 +35,7 @@ const lessions = <Lession[]>[
             </v-col>
             <v-col cols="12" lg="3" v-for="(lession, index) in lessions" :key="index">
                 <lession-card 
+                    class="mx-auto"
                     :size="lession.size"
                     :title="lession.title"
                     :image="lession.image"

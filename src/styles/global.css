@@ -42,6 +42,10 @@
     background-color: var(--dark-blue-color);
 }
 
+.primary-color {
+    color: var(--primary-color)
+}
+
 .grey-color {
     color: var(--grey-color)
 }

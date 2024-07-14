@@ -18,7 +18,16 @@ import girl from '@/assets/images/girl.png'
                 />
             </v-col>
             <v-col cols="12" lg="5">
-                <v-img :src="girl" alt="Girl" cover class="image-hero" />
+                <v-img :lazy-src="girl" :src="girl" alt="Girl" cover class="image-hero">
+                    <template v-slot:placeholder>
+                        <div class="d-flex align-center justify-center fill-height">
+                            <v-progress-circular
+                                color="grey-lighten-4"
+                                indeterminate
+                            ></v-progress-circular>
+                        </div>
+                    </template>
+                </v-img>
             </v-col>
         </v-row>
     </v-container>
@@ -26,10 +35,16 @@ import girl from '@/assets/images/girl.png'
 
 <style scoped>
 .hero-section {
-    border-radius: 0 0 150px 0;
+    border-radius: 0 0 130px 0;
 }
 
 .image-hero {
     margin-bottom: -17px;
+}
+
+@media screen and (width <= 768px) {
+    .image-hero {
+        margin-bottom: -15px;
+    }
 }
 </style>

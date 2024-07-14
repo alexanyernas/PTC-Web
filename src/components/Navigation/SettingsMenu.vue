@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const items = [
-    { title: 'Lorem Ipsum', icon: 'mdi-account', to: 'Profile' },
+    { title: 'Lorem Ipsum', icon: 'mdi-information', to: 'Profile' },
     { title: 'Lorem Ipsum', icon: 'mdi-lock',    to: 'UpdatePassword' }
 ];
 </script>

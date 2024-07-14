@@ -3,11 +3,6 @@
     src: url('@/assets/fonts/Poppins-Regular.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: 'Poppins-Bold';
-    src: url('@/assets/fonts/Poppins-Bold.ttf') format('truetype');
-}
-
 :root {
     --primary-color: #49BBBD;
     --secondary-color: #F48C06;

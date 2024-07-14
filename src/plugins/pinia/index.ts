@@ -19,7 +19,8 @@ export const useLessionStore = defineStore('lession', {
         }
     },
     getters: {
-        getCurretnLessionTitle: (state) => state.currentLession.title
+        getCurrentLessionTitle: (state) => state.currentLession.title,
+        getCurrentLessionVideo: (state) => state.currentLession.video
     }
 });
 

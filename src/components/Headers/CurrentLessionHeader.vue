@@ -7,6 +7,6 @@ const lessionStore = useLessionStore();
 
 <template>
     <div class="bg-primary-color pa-8">
-        <p class="text-h5 text-white">{{ lessionStore.getCurretnLessionTitle }}</p>
+        <p class="text-h5 text-white">{{ lessionStore.getCurrentLessionTitle }}</p>
     </div>
 </template>

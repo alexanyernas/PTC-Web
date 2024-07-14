@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div>
-    <p>Hello World</p>
-  </div>
+  <v-app>
+    <v-layout>
+      <v-main>
+        <router-view v-slot="{ Component }">
+          <component :is="Component" />
+        </router-view>
+      </v-main>
+    </v-layout>
+  </v-app>
 </template>

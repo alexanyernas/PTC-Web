@@ -32,13 +32,13 @@ const lessionStore = useLessionStore();
                 })"
             />
         </template>
-        <v-list nav density="compact">
+        <v-list nav density="comfortable">
             <lession-item-menu 
                 v-for="item in lessionItems" 
                 :key="item.id"
+                :value="item.id"
                 :title="item.title"
                 :color="item.color"
-                :value="item.value"
                 @click="lessionStore.setCurrentLession(item)"
             />
         </v-list>

@@ -4,4 +4,5 @@ export interface LessionItemModel {
     color: string;
     video?: string;
     content?: string[];
+    references?: string[];
 }

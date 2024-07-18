@@ -55,15 +55,15 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
         </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar v-else prominent color="#252641">
+    <v-app-bar v-else color="#252641">
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer" />
     </v-app-bar>
 
     <v-navigation-drawer
         temporary
         v-model="drawer"
-        location="bottom"
         density="comfortable"
+        :class="drawer ? 'w-100' : 'w-0'"
     >
         <v-list nav>
             <lession-item-menu 

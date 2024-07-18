@@ -33,15 +33,18 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
         location="left" 
     >
         <template v-slot:prepend>
-            <v-btn 
-                rounded="0"
-                class="ml-2"
-                color="#49BBBD"
-                icon="mdi-keyboard-backspace"
-                @click="router.push({
-                    name: 'Home'
-                })"
-            />
+            <div class="d-flex align-center">
+                <v-btn 
+                    rounded="0"
+                    class="mx-3"
+                    color="#49BBBD"
+                    icon="mdi-keyboard-backspace"
+                    @click="router.push({
+                        name: 'Home'
+                    })"
+                />
+                <p>Contenido</p>
+            </div>
         </template>
         <v-list nav density="comfortable">
             <lession-item-menu 

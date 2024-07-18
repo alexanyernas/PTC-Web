@@ -6,6 +6,7 @@ export const initialStateLessionItem = <LessionItemModel>{
     title: '',
     color: '',
     video: '',
+    images: [],
     content: [],
     references: []
 };

@@ -5,7 +5,7 @@ import LessionMenu from '@/components/Navigation/LessionMenu.vue';
 
 <template>
     <v-layout>
-        <v-main class="h-screen">
+        <v-main>
             <lession-menu />
             <router-view />
         </v-main>

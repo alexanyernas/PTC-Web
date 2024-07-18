@@ -24,15 +24,10 @@ onMounted(() => {
 <template>
     <div class="bg-tertiary-color overflow-y-auto h-screen">
         <current-lession-header />
-        <v-container :class="!mdAndDown ? 'px-12' : ''">
+        <v-container :class="!mdAndDown ? 'w-75' : ''">
             <v-row justify="center">
                 <v-col class="text-center" cols="12" v-if="lessionStore.getCurrentLessionVideo && lessionStore.getCurrentLessionVideo.length">
                     <div v-html="lessionStore.getCurrentLessionVideo"></div>
-                </v-col>
-                <v-col cols="12" v-if="lessionStore.getCurrentLessionContent && lessionStore.getCurrentLessionContent.length">
-                    <div v-for="(section, index) in lessionStore.getCurrentLessionContent" :key="index">
-                        <div v-html="section"></div>
-                    </div>
                 </v-col>
                 <v-col cols="12" v-if="lessionStore.getCurrentLessionImages && lessionStore.getCurrentLessionImages.length">
                     <div v-for="(image, index) in lessionStore.getCurrentLessionImages" :key="index">
@@ -41,8 +36,13 @@ onMounted(() => {
                             class="mb-6"
                             :alt="`${image}-${index}`" 
                             :src="requireImage(image.src)"
-                            :class="!mdAndDown && 'h-50 w-50 mx-auto'"
+                            :class="!mdAndDown && 'h-50 mx-auto'"
                         />
+                    </div>
+                </v-col>
+                <v-col cols="12" v-if="lessionStore.getCurrentLessionContent && lessionStore.getCurrentLessionContent.length">
+                    <div v-for="(section, index) in lessionStore.getCurrentLessionContent" :key="index">
+                        <div v-html="section"></div>
                     </div>
                 </v-col>
                 <v-col cols="12" v-if="lessionStore.getCurrentLessionReferences && lessionStore.getCurrentLessionReferences.length">

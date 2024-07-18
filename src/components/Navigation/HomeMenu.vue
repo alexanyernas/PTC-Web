@@ -3,7 +3,7 @@
 import { useDisplay } from 'vuetify';
 
 // Import Vue Components
-import SettingsMenu from '@/components/Navigation/SettingsMenu.vue';
+// import SettingsMenu from '@/components/Navigation/SettingsMenu.vue';
 
 // Import Assets
 import logo from '@/assets/images/logo.png';
@@ -20,9 +20,9 @@ const { mdAndDown } = useDisplay();
             <v-col :cols="mdAndDown ? 6 : 2">
                 <div class="d-flex justify-center align-center">
                     <p class="mr-2 text-white">Bienvenido</p>
-                    <v-icon icon="mdi-menu-down mb-1" color="#FFF"/>
+                    <!-- <v-icon icon="mdi-menu-down mb-1" color="#FFF"/> -->
                 </div>
-                <settings-menu />
+                <!-- <settings-menu /> -->
             </v-col>
         </v-row>
     </v-app-bar>

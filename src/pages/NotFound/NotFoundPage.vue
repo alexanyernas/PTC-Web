@@ -1,11 +1,11 @@
 <script setup lang="ts">
 // Import Assets
-import logo from '@/assets/images/logo.png';
+import ucv from '@/assets/images/logos/ucv.png';
 </script>
 
 <template>
     <div class="container">
-        <v-img :src="logo" width="250" class="mx-auto mb-6" alt="Logo" />
+        <v-img :src="ucv" width="250" class="mx-auto mb-6" alt="UCV" />
         <p class="dark-blue-color text-center font-weight-bold text-h4">La página que intentas solicitar no está en el servidor (Error 404).</p>
     </div>
 </template>

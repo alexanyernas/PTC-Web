@@ -4,25 +4,30 @@ import LessionCard from '@/components/Cards/LessionCard.vue';
 
 interface Lession {
     title: string;
-    size: number;
     image: string;
+    index: number;
+    size: number;
 }
 
 const lessions = <Lession[]>[
     {
         title: 'Estructura y Funciones del Cabello', 
         image: '1-min.jpg',
-        size: 3
+        size: 3,
+        index: 0
+        
     },
     {
         title: 'Aplicación de los Tintes Capilares', 
         image: '2-min.jpg',
-        size: 3
+        size: 3,
+        index: 3
     },
     {
         title: 'Clasificación de los Tintes Capilares', 
         image: '3-min.jpg',
-        size: 6
+        size: 6,
+        index: 6
     }
 ];
 </script>
@@ -39,6 +44,7 @@ const lessions = <Lession[]>[
                     :size="lession.size"
                     :title="lession.title"
                     :image="lession.image"
+                    :index="lession.index"
                 />
             </v-col>
         </v-row>

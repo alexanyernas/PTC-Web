@@ -43,7 +43,7 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
                         name: 'Home'
                     })"
                 />
-                <p>Contenido</p>
+                <p>Lecciones</p>
             </div>
         </template>
         <v-list nav density="comfortable">

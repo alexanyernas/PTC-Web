@@ -68,6 +68,10 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
 
     <v-app-bar v-else color="#252641">
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer" />
+        <v-spacer></v-spacer>
+        <v-icon variant="text" icon="mdi-undo" class="mx-4" @click="router.push({
+            name: 'Home'
+        })" />
     </v-app-bar>
 
     <v-navigation-drawer

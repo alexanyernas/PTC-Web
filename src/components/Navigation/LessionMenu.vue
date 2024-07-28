@@ -28,7 +28,7 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
         v-if="!mdAndDown" 
         permanent 
         border="0" 
-        width="360"
+        width="380"
         class="pt-2" 
         location="left" 
     >
@@ -46,20 +46,32 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
                 <p>Lecciones</p>
             </div>
         </template>
-        <v-list nav density="comfortable">
-            <lession-item-menu 
-                v-for="item in lessionItems" 
-                :key="item.id"
-                :value="item.id"
-                :title="item.title"
-                :color="item.color"
-                @click="lessionStore.setCurrentLession(item)"
-            />
+        <v-list nav density="compact">
+            <div v-for="item in lessionItems" :key="item.id" class="my-4">
+                <p class="ml-2 mb-1 font-weight-bold dark-blue-color">{{ item.title }}</p>
+                <lession-item-menu    
+                    v-for="lession in item.content" :key="lession.id"                 
+                    :value="lession.id"
+                    :title="lession.title"
+                    :color="lession.color"
+                    @click="lessionStore.setCurrentLession(lession)"
+                />
+            </div>
         </v-list>
+
+        <template v-slot:append>
+            <div class="px-2 py-4 bg-dark-blue" >
+                <p class="text-center text-white text-caption">&copy; {{ new Date().getFullYear() }} Universidad Central de Venezuela (UCV)</p>
+            </div>
+        </template>
     </v-navigation-drawer>
 
     <v-app-bar v-else color="#252641">
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer" />
+        <v-spacer></v-spacer>
+        <v-icon variant="text" icon="mdi-undo" class="mx-4" @click="router.push({
+            name: 'Home'
+        })" />
     </v-app-bar>
 
     <v-navigation-drawer
@@ -68,15 +80,23 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
         density="comfortable"
         :class="drawer ? 'w-100' : 'w-0'"
     >
-        <v-list nav>
-            <lession-item-menu 
-                v-for="item in lessionItems" 
-                :key="item.id"
-                :value="item.id"
-                :title="item.title"
-                :color="item.color"
-                @click="handleSetCurrentLession(item)"
-            />
+        <v-list nav density="compact">
+            <div v-for="item in lessionItems" :key="item.id" class="my-4">
+                <p class="ml-2 mb-1 font-weight-bold dark-blue-color">{{ item.title }}</p>
+                <lession-item-menu    
+                    v-for="lession in item.content" :key="lession.id"                 
+                    :value="lession.id"
+                    :title="lession.title"
+                    :color="lession.color"
+                    @click="handleSetCurrentLession(lession)"
+                />
+            </div>
         </v-list>
+
+        <template v-slot:append>
+            <div class="px-2 py-4 bg-dark-blue" >
+                <p class="text-center text-white text-caption">&copy; {{ new Date().getFullYear() }} Universidad Central de Venezuela (UCV).</p>
+            </div>
+        </template>
     </v-navigation-drawer>
 </template>

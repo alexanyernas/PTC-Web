@@ -30,13 +30,12 @@ onMounted(() => {
                     <div v-html="lessionStore.getCurrentLessionVideo"></div>
                 </v-col>
                 <v-col cols="12" v-if="lessionStore.getCurrentLessionImages && lessionStore.getCurrentLessionImages.length">
-                    <div v-for="(image, index) in lessionStore.getCurrentLessionImages" :key="index">
-                        <p class="text-uppercase text-center secondary-color mb-4 font-weight-bold text-h6">{{ image.title }}</p>
+                    <div v-for="(image, index) in lessionStore.getCurrentLessionImages" :key="index" class="mb-4">
+                        <p v-if="image.title && image.title.length" class="secondary-color mb-1 font-weight-bold text-h6">{{ image.title }}:</p>
                         <v-img 
-                            class="mb-6"
                             :alt="`${image}-${index}`" 
                             :src="requireImage(image.src)"
-                            :class="!mdAndDown && 'h-50 mx-auto'"
+                            :class="!mdAndDown && 'h-25 mx-auto'"
                         />
                     </div>
                 </v-col>
@@ -52,7 +51,7 @@ onMounted(() => {
                             <div v-html="section"></div>
                         </ul>
                     </div>
-            </v-col>
+                </v-col>
             </v-row>
         </v-container>
     </div>

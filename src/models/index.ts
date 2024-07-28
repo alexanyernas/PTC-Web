@@ -12,3 +12,9 @@ export interface LessionItemModel {
     content?: string[];
     references?: string[];
 }
+
+export interface LessionContainerModel {
+    id: string;
+    title: string;
+    content: LessionItemModel[];
+}

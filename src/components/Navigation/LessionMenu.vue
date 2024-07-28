@@ -48,7 +48,7 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
         </template>
         <v-list nav density="comfortable">
             <div v-for="item in lessionItems" :key="item.id" class="my-4">
-                <p class="ml-2 font-weight-bold">{{ item.title }}</p>
+                <p class="ml-2 mb-1 font-weight-bold dark-blue-color">{{ item.title }}</p>
                 <lession-item-menu    
                     v-for="lession in item.content" :key="lession.id"                 
                     :value="lession.id"
@@ -58,6 +58,12 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
                 />
             </div>
         </v-list>
+
+        <template v-slot:append>
+            <div class="px-2 py-4 bg-dark-blue" >
+                <p class="text-center text-white text-caption">&copy; {{ new Date().getFullYear() }} Universidad Central de Venezuela (UCV).</p>
+            </div>
+        </template>
     </v-navigation-drawer>
 
     <v-app-bar v-else color="#252641">
@@ -72,7 +78,7 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
     >
         <v-list nav density="comfortable">
             <div v-for="item in lessionItems" :key="item.id" class="my-4">
-                <p class="mx-2 font-weight-bold">{{ item.title }}</p>
+                <p class="ml-2 mb-1 font-weight-bold dark-blue-color">{{ item.title }}</p>
                 <lession-item-menu    
                     v-for="lession in item.content" :key="lession.id"                 
                     :value="lession.id"
@@ -82,5 +88,11 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
                 />
             </div>
         </v-list>
+
+        <template v-slot:append>
+            <div class="px-2 py-4 bg-dark-blue" >
+                <p class="text-center text-white text-caption">&copy; {{ new Date().getFullYear() }} Universidad Central de Venezuela (UCV).</p>
+            </div>
+        </template>
     </v-navigation-drawer>
 </template>

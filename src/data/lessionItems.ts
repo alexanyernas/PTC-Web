@@ -4,12 +4,12 @@ import { LessionContainerModel } from "@/models";
 export const lessionItems = <LessionContainerModel[]>[
     {
         id: '1',
-        title: 'Estructura y Funciones del Cabello',
+        title: '1. Estructura y Funciones del Cabello',
         content: [
             {
                 id: '11',
                 color: '#49BBBD',
-                title: '01. Composición del Cabello',
+                title: '1.1. Composición del Cabello',
                 video: '<iframe width="100%" height="420" src="https://www.youtube.com/embed/1UtM_p_8M48?si=butvOrVNCYI9idm5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 content: [
                     "<p class='mb-6'>El cabello humano está compuesto principalmente por una proteína llamada queratina, la cual es la responsable de su estructura y resistencia. La queratina está formada por cadenas de aminoácidos que se unen entre sí mediante enlaces químicos, creando una estructura robusta y flexible.</p>",
@@ -21,7 +21,7 @@ export const lessionItems = <LessionContainerModel[]>[
                 id: '12',
                 value: '2',
                 color: '#F48C06',
-                title: '02. Funciones del Cabello',
+                title: '1.2. Funciones del Cabello',
                 video: '<iframe width="100%" height="420" src="https://www.youtube.com/embed/Y8DoD-2Ljsk?si=lWuQEGrbGxJYSVc-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 content: [
                     "<p class='mb-6'>El cabello no solo cumple una función estética, sino que también desempeña varias funciones importantes en el cuerpo humano. A continuación, se detallan las principales funciones del cabello:</p>",
@@ -31,7 +31,7 @@ export const lessionItems = <LessionContainerModel[]>[
             {
                 id: '13',
                 color: '#49BBBD',
-                title: '03. Afecciones del Cabello',
+                title: '1.3. Afecciones del Cabello',
                 video: '<iframe width="100%" height="420" src="https://www.youtube.com/embed/61G8QYeK-FQ?si=CAkcHaqwnS5-yszX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 content: [
                     "<p class='mb-6'>El cabello puede verse afectado por una variedad de afecciones y trastornos que pueden influir en su salud, apariencia y crecimiento. A continuación se describen algunas de las afecciones del cabello más comunes:</p>",
@@ -43,12 +43,12 @@ export const lessionItems = <LessionContainerModel[]>[
     },
     {
         id: '2',
-        title: 'Aplicación de los Tintes Capilares',
+        title: '2. Aplicación de los Tintes Capilares',
         content: [
             {
                 id: '21',
                 color: '#F48C06',
-                title: '04. ¿Qué son los Tintes Capilares?',
+                title: '2.1. ¿Qué son los Tintes Capilares?',
                 content: [
                     "<p class='mb-6'>Los tintes capilares son productos químicos o naturales utilizados para cambiar el color del cabello. Estos productos pueden ser aplicados para diversos fines, como cubrir canas, cambiar el color natural del cabello, seguir tendencias de moda o expresar la identidad personal.</p>",
                     "<p class='mb-6'>Existen diferentes tipos de tintes capilares según su composición y duración:</p>",
@@ -59,7 +59,7 @@ export const lessionItems = <LessionContainerModel[]>[
             {
                 id: '22',
                 color: '#49BBBD',
-                title: '05. Componentes de los Tintes Capilares',
+                title: '2.2. Componentes de los Tintes Capilares',
                 content: [
                     "<p class='mb-6'>Los tintes capilares están compuestos por una variedad de ingredientes que permiten la alteración del color del cabello. Estos componentes pueden variar según el tipo de tinte (temporal, semi-permanente, demi-permanente o permanente), pero en general, los tintes capilares contienen los siguientes ingredientes básicos:</p>",
                     "<ul class='mb-6 px-6'><li><strong>Agentes Colorantes:</strong> Son los compuestos que proporcionan el color al cabello. En los tintes permanentes, los agentes colorantes suelen ser moléculas pequeñas que penetran la cutícula y reaccionan químicamente en el córtex del cabello para formar grandes moléculas de color. En los tintes semi-permanentes y temporales, los colorantes generalmente se depositan en la superficie del cabello.</li><li><strong>Amoníaco o Sustitutos del Amoníaco:</strong> El amoníaco es una sustancia alcalina que abre la cutícula del cabello, permitiendo que los agentes colorantes penetren en el córtex. En algunos tintes, el amoníaco se sustituye por otras sustancias alcalinas menos agresivas, como la etanolamina.</li><li><strong>Peróxido de Hidrógeno:</strong> El peróxido de hidrógeno se utiliza como agente oxidante que activa los agentes colorantes y ayuda a decolorar el pigmento natural del cabello. Esto es crucial en los tintes permanentes para lograr colores más claros o cambios de color drásticos.</li><li><strong>Agentes Humectantes:</strong> Estos ingredientes, como la glicerina, ayudan a retener la humedad en el cabello durante el proceso de teñido, evitando que se reseque demasiado.</li><li><strong>Estabilizadores:</strong> Los estabilizadores, como el ácido cítrico, se utilizan para mantener el pH del tinte dentro de un rango adecuado, asegurando que la coloración sea efectiva y duradera.</li><li><strong>Agentes Acondicionadores:</strong> Muchos tintes incluyen ingredientes acondicionadores, como siliconas y aceites, que ayudan a suavizar y proteger el cabello durante y después del proceso de teñido.</li><li><strong>Aromatizantes:</strong> Para enmascarar el olor fuerte del amoníaco y otros productos químicos, se añaden fragancias al tinte capilar.</li></ul>",
@@ -69,7 +69,7 @@ export const lessionItems = <LessionContainerModel[]>[
             {
                 id: '23',
                 color: '#F48C06',
-                title: '06. Características de los Tintes Capilares',
+                title: '2.3. Características de los Tintes Capilares',
                 content: [
                     "<p class='mb-6'>Los tintes capilares poseen una variedad de características que los diferencian según su composición, duración y efectos en el cabello. Estas características pueden influir en la elección del tipo de tinte según las necesidades y preferencias individuales. A continuación, se describen las principales características de los tintes capilares:</p>",
                     "<ul class='mb-6 px-6'><li><strong>Duración:</strong> La durabilidad del color varía según el tipo de tinte. Los tintes temporales duran hasta el primer lavado, los semi-permanentes entre 4 a 6 semanas, los demi-permanentes entre 6 a 8 semanas, y los permanentes permanecen hasta que el cabello crece y se corta.</li><li><strong>Penetración en el Cabello:</strong> Los tintes temporales se adhieren a la superficie del cabello, mientras que los semi-permanentes y demi-permanentes penetran parcialmente la cutícula. Los tintes permanentes penetran profundamente en el córtex del cabello, permitiendo una transformación más duradera del color.</li><li><strong>Composición Química:</strong> Los tintes permanentes generalmente contienen amoníaco y peróxido de hidrógeno, que abren la cutícula del cabello y permiten la fijación del color. Los tintes semi-permanentes y demi-permanentes suelen ser menos agresivos, ya que no contienen amoníaco o lo hacen en menores cantidades.</li><li><strong>Impacto en la Salud del Cabello:</strong> Los tintes permanentes pueden causar más daño al cabello debido a los químicos fuertes que contienen. Los semi-permanentes y demi-permanentes son menos dañinos y suelen contener agentes acondicionadores para minimizar el daño. Los tintes temporales tienen el menor impacto en la salud del cabello.</li><li><strong>Proceso de Aplicación:</strong> Los tintes permanentes requieren un proceso de mezcla de componentes y una aplicación cuidadosa, mientras que los tintes semi-permanentes y temporales son generalmente más fáciles de aplicar y no requieren mezcla.</li></ul>",
@@ -79,12 +79,12 @@ export const lessionItems = <LessionContainerModel[]>[
     },
     {
         id: '3',
-        title: 'Clasificación de los Tintes Capilares',
+        title: '3. Clasificación de los Tintes Capilares',
         content: [
             {
                 id: '31',
                 color: '#49BBBD',
-                title: '07. Tintes Vegetales Comunes',
+                title: '3.1. Tintes Vegetales Comunes',
                 video: '<iframe width="100%" height="420" src="https://www.youtube.com/embed/P2l9jmHNzMk?si=fa0liRtBpCyLSy6B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
                 content: [
                     "<p class='mb-6'>Los tintes vegetales son una opción natural para cambiar el color del cabello sin el uso de productos químicos agresivos. Estos tintes están hechos de extractos de plantas y otros ingredientes naturales, lo que los hace más suaves para el cabello y el cuero cabelludo. A continuación, se describen algunos de los tintes vegetales más comunes:</p>",
@@ -95,7 +95,7 @@ export const lessionItems = <LessionContainerModel[]>[
             {
                 id: '32',
                 color: '#F48C06',
-                title: '08. Propiedades de los Tintes Vegetales',
+                title: '3.2. Propiedades de los Tintes Vegetales',
                 images: [
                     { src: '4-min.png' }
                 ],
@@ -107,7 +107,7 @@ export const lessionItems = <LessionContainerModel[]>[
             {
                 id: '33',
                 color: '#49BBBD',
-                title: '09. Tipos de Tintes Minerales',
+                title: '3.3. Tipos de Tintes Minerales',
                 content: [
                     "<p class='mb-6'>Los tintes minerales son una opción menos común pero interesante para colorear el cabello. Están compuestos de minerales naturales y no contienen los productos químicos agresivos que se encuentran en muchos tintes comerciales. A continuación, se describen algunos de los tintes minerales más utilizados:</p>",
                     "<ul class='mb-6 px-6'><li><strong>Arcilla Bentonita:</strong> La arcilla bentonita es conocida por sus propiedades purificantes y desintoxicantes. Cuando se mezcla con agua, puede formar una pasta que no solo limpia el cabello, sino que también puede proporcionar un ligero tono marrón. Es más comúnmente utilizada como tratamiento para el cuero cabelludo y el cabello.</li><li><strong>Minerales de Henna:</strong> Aunque la henna es una planta, algunos productos combinan henna con minerales para alterar y mejorar los tonos del cabello. Por ejemplo, la henna mezclada con óxido de hierro puede producir tonos rojizos más intensos.</li><li><strong>Óxido de Hierro:</strong> El óxido de hierro se utiliza a menudo en cosméticos y productos para el cabello por su capacidad para proporcionar tonos rojos y marrones. Es un colorante mineral seguro y efectivo.</li><li><strong>Talco:</strong> El talco, aunque más conocido como un polvo absorbente, puede ser usado en combinación con otros minerales para proporcionar un efecto de color ligero y mate en el cabello. Se usa principalmente en productos de peinado en seco.</li><li><strong>Carbonato de Calcio:</strong> Este mineral se encuentra a menudo en tizas y otros productos de peinado temporales. Proporciona un color temporal que puede ser fácilmente lavado y es ideal para cambios de color no permanentes y efectos especiales.</li><li><strong>Mica:</strong> La mica es un mineral que se utiliza para proporcionar brillo y reflejos en el cabello. No altera significativamente el color del cabello, pero puede añadir un efecto luminoso y brillante.</li><li><strong>Caolín:</strong> El caolín, o arcilla blanca, se utiliza principalmente en productos para el cuero cabelludo y el cabello debido a sus propiedades absorbentes y calmantes. Puede proporcionar un ligero efecto de color blanquecino, pero su uso principal es como tratamiento de limpieza y acondicionamiento.</li></ul>",
@@ -116,7 +116,7 @@ export const lessionItems = <LessionContainerModel[]>[
             {
                 id: '34',
                 color: '#F48C06',
-                title: '10. Efectos de los Tintes Minerales',
+                title: '3.4. Efectos de los Tintes Minerales',
                 content: [
                     "<p class='mb-6'>Los tintes minerales son una opción natural para colorear el cabello, y aunque no son tan comunes como los tintes vegetales o químicos, tienen efectos únicos y beneficios específicos. A continuación, se describen algunos de los principales efectos de los tintes minerales:</p>",
                     "<ul class='mb-6 px-6'><li><strong>Colores Naturales:</strong> Los tintes minerales suelen proporcionar tonos más naturales y sutiles en comparación con los tintes químicos. Por ejemplo, el óxido de hierro puede proporcionar tonos rojizos y marrones, mientras que la mica puede añadir un brillo luminoso.</li><li><strong>Textura y Volumen:</strong> Algunos tintes minerales, como el caolín y la arcilla bentonita, pueden mejorar la textura y el volumen del cabello. Estos minerales ayudan a limpiar y desintoxicar el cuero cabelludo, lo que puede resultar en un cabello más saludable y con más cuerpo.</li><li><strong>Menor Daño:</strong> A diferencia de los tintes químicos, los tintes minerales no contienen amoníaco ni peróxido de hidrógeno, lo que significa que no causan daño a la estructura del cabello. Esto los hace una opción más segura para el cabello frágil o dañado.</li><li><strong>Propiedades Acondicionadoras:</strong> Muchos tintes minerales tienen propiedades acondicionadoras que pueden ayudar a mantener el cabello suave y manejable. Por ejemplo, la arcilla bentonita no solo tiñe el cabello, sino que también lo acondiciona y fortalece.</li><li><strong>Resultados Temporales:</strong> Los tintes minerales suelen ofrecer resultados temporales, lo que los hace ideales para quienes desean experimentar con el color del cabello sin un compromiso a largo plazo. Estos tintes se desvanecen gradualmente con el lavado.</li><li><strong>Seguridad y Compatibilidad:</strong> Los tintes minerales son generalmente seguros para todo tipo de cabello y cuero cabelludo, incluyendo aquellos sensibles o propensos a alergias. Sin embargo, siempre es recomendable realizar una prueba de alergia antes de usar cualquier nuevo producto.</li><li><strong>Beneficios para el Cuero Cabelludo:</strong> Algunos minerales, como el caolín y la arcilla bentonita, tienen propiedades purificantes y pueden ayudar a mantener el cuero cabelludo limpio y libre de impurezas. Esto puede reducir problemas como la caspa y la irritación.</li></ul>",
@@ -125,7 +125,7 @@ export const lessionItems = <LessionContainerModel[]>[
             {
                 id: '35',
                 color: '#49BBBD',
-                title: '11. Principales Grupos de Tintes Sintéticos',
+                title: '3.5. Principales Grupos de Tintes Sintéticos',
                 content: [
                     "<p class='mb-6'>Los tintes sintéticos son productos químicos creados en laboratorio que se utilizan para colorear el cabello de manera efectiva y duradera. Estos tintes se dividen en varios grupos principales según su composición química y el tipo de reacción que producen en el cabello. A continuación, se describen los principales grupos de tintes sintéticos:</p>",
                     "<ul class='mb-6 px-6'><li><strong>Tintes Permanentes:</strong> Estos tintes contienen amoníaco y peróxido de hidrógeno, que abren la cutícula del cabello y permiten que los pigmentos penetren en el córtex. Proporcionan un color duradero que solo se elimina con el crecimiento del cabello. Son ideales para cubrir canas y realizar cambios de color drásticos.</li><li><strong>Tintes Demi-Permanentes:</strong> Estos tintes contienen una menor cantidad de peróxido y no contienen amoníaco, lo que los hace menos agresivos que los tintes permanentes. Penetran parcialmente la cutícula del cabello y duran entre 6 a 8 semanas. Son ideales para añadir tono o realzar el color natural del cabello sin el compromiso a largo plazo de los tintes permanentes.</li><li><strong>Tintes Semi-Permanentes:</strong> No contienen amoníaco ni peróxido, lo que los hace menos dañinos para el cabello. Se depositan en la superficie del cabello y duran entre 4 a 6 semanas. Son adecuados para cambios de color temporales y para quienes buscan evitar el uso de productos químicos fuertes.</li><li><strong>Tintes Temporales:</strong> Estos tintes se adhieren a la superficie del cabello y se eliminan con uno o dos lavados. No penetran la cutícula del cabello y son ideales para ocasiones especiales o para probar un nuevo color sin compromiso.</li><li><strong>Tintes de Oxidación:</strong> Este grupo incluye tintes permanentes que requieren la mezcla de un agente oxidante (como el peróxido de hidrógeno) con el colorante. La oxidación permite que los pigmentos del colorante se fijen en el cabello, proporcionando un color duradero y resistente al lavado.</li></ul>",
@@ -135,7 +135,7 @@ export const lessionItems = <LessionContainerModel[]>[
                 id: '36',
                 value: '12',
                 color: '#F48C06',
-                title: '12. Clasificación de Tintes Sintéticos',
+                title: '3.6. Clasificación de Tintes Sintéticos',
                 content: [
                     "<p class='mb-6'>Los tintes sintéticos para el cabello se clasifican en varias categorías según su composición química y la duración del color en el cabello. Esta clasificación ayuda a los usuarios a elegir el tipo de tinte que mejor se adapte a sus necesidades y expectativas. A continuación, se presentan las principales clasificaciones de los tintes sintéticos:</p>",
                     "<ul class='mb-6 px-6'><li><strong>Tintes Permanentes:</strong><ul class='px-6'><li><strong>Descripción:</strong> Estos tintes contienen amoníaco y peróxido de hidrógeno, que permiten que los pigmentos penetren profundamente en el córtex del cabello.</li><li><strong>Duración:</strong> El color dura hasta que el cabello crece y se corta.</li><li><strong>Uso Común:</strong> Son ideales para cubrir canas y realizar cambios de color drásticos y duraderos.</li></ul></li><li><strong>Tintes Demi-Permanentes:</strong><ul class='px-6'><li><strong>Descripción:</strong> Contienen una menor cantidad de peróxido y no contienen amoníaco. Penetran parcialmente la cutícula del cabello.</li><li><strong>Duración:</strong> Duran entre 6 a 8 semanas.</li><li><strong>Uso Común:</strong> Son adecuados para realzar el color natural del cabello o añadir tonos sin compromiso a largo plazo.</li></ul></li><li><strong>Tintes Semi-Permanentes:</strong><ul class='px-6'><li><strong>Descripción:</strong> No contienen amoníaco ni peróxido. Se depositan en la superficie del cabello.</li><li><strong>Duración:</strong> Duran entre 4 a 6 semanas.</li><li><strong>Uso Común:</strong> Son ideales para cambios de color temporales y para quienes desean evitar productos químicos fuertes.</li></ul></li><li><strong>Tintes Temporales:</strong><ul class='px-6'><li><strong>Descripción:</strong> Se adhieren a la superficie del cabello y se eliminan con uno o dos lavados.</li><li><strong>Duración:</strong> El color se elimina con el primer o segundo lavado.</li><li><strong>Uso Común:</strong> Son ideales para ocasiones especiales o para probar un nuevo color sin compromiso.</li></ul></li><li><strong>Tintes de Oxidación:</strong><ul class='px-6'><li><strong>Descripción:</strong> Requieren la mezcla de un agente oxidante (como el peróxido de hidrógeno) con el colorante.</li><li><strong>Duración:</strong> Proporcionan un color duradero y resistente al lavado.</li><li><strong>Uso Común:</strong> Son utilizados para obtener colores intensos y duraderos.</li></ul></li></ul>",

@@ -28,7 +28,7 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
         v-if="!mdAndDown" 
         permanent 
         border="0" 
-        width="360"
+        width="380"
         class="pt-2" 
         location="left" 
     >
@@ -46,7 +46,7 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
                 <p>Lecciones</p>
             </div>
         </template>
-        <v-list nav density="comfortable">
+        <v-list nav density="compact">
             <div v-for="item in lessionItems" :key="item.id" class="my-4">
                 <p class="ml-2 mb-1 font-weight-bold dark-blue-color">{{ item.title }}</p>
                 <lession-item-menu    
@@ -61,7 +61,7 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
 
         <template v-slot:append>
             <div class="px-2 py-4 bg-dark-blue" >
-                <p class="text-center text-white text-caption">&copy; {{ new Date().getFullYear() }} Universidad Central de Venezuela (UCV).</p>
+                <p class="text-center text-white text-caption">&copy; {{ new Date().getFullYear() }} Universidad Central de Venezuela (UCV)</p>
             </div>
         </template>
     </v-navigation-drawer>
@@ -76,7 +76,7 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
         density="comfortable"
         :class="drawer ? 'w-100' : 'w-0'"
     >
-        <v-list nav density="comfortable">
+        <v-list nav density="compact">
             <div v-for="item in lessionItems" :key="item.id" class="my-4">
                 <p class="ml-2 mb-1 font-weight-bold dark-blue-color">{{ item.title }}</p>
                 <lession-item-menu    

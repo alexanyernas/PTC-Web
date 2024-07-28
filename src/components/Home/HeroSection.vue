@@ -24,7 +24,7 @@ const handlePushLessions = () => {
     <v-container fluid class="hero-section bg-primary-color px-12">
         <v-row align="center" no-gutters>
             <v-col cols="12" lg="6">
-                <h1 class="mb-12 text-h2 font-weight-bold dark-blue-color">Objeto de Aprendizaje: Proceso de Tinte en el Cabello</h1>
+                <h1 class="mb-12 text-h3 font-weight-bold dark-blue-color">Objeto de Aprendizaje: Proceso de Tinte en el Cabello</h1>
                 <p class="text-white mb-4">Descubre los procesos de tinte capilar, abordando desde la <br>estructura del cabello hasta la clasificación de los tintes según su procedencia.</p>
                 <v-btn 
                     rounded

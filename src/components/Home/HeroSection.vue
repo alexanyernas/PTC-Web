@@ -13,7 +13,7 @@ const router = useRouter();
 const lessionStore = useLessionStore();
 
 const handlePushLessions = () => {
-    lessionStore.setCurrentLession(lessionItems[0]);
+    lessionStore.setCurrentLession(lessionItems[0].content[0]);
     router.push({
         name: 'CurrentLession'
     });

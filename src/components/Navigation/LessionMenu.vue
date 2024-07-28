@@ -47,14 +47,16 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
             </div>
         </template>
         <v-list nav density="comfortable">
-            <lession-item-menu 
-                v-for="item in lessionItems" 
-                :key="item.id"
-                :value="item.id"
-                :title="item.title"
-                :color="item.color"
-                @click="lessionStore.setCurrentLession(item)"
-            />
+            <div v-for="item in lessionItems" :key="item.id" class="my-4">
+                <p class="ml-2 font-weight-bold">{{ item.title }}</p>
+                <lession-item-menu    
+                    v-for="lession in item.content" :key="lession.id"                 
+                    :value="lession.id"
+                    :title="lession.title"
+                    :color="lession.color"
+                    @click="lessionStore.setCurrentLession(lession)"
+                />
+            </div>
         </v-list>
     </v-navigation-drawer>
 
@@ -68,15 +70,17 @@ const handleSetCurrentLession = (value: LessionItemModel) => {
         density="comfortable"
         :class="drawer ? 'w-100' : 'w-0'"
     >
-        <v-list nav>
-            <lession-item-menu 
-                v-for="item in lessionItems" 
-                :key="item.id"
-                :value="item.id"
-                :title="item.title"
-                :color="item.color"
-                @click="handleSetCurrentLession(item)"
-            />
+        <v-list nav density="comfortable">
+            <div v-for="item in lessionItems" :key="item.id" class="my-4">
+                <p class="mx-2 font-weight-bold">{{ item.title }}</p>
+                <lession-item-menu    
+                    v-for="lession in item.content" :key="lession.id"                 
+                    :value="lession.id"
+                    :title="lession.title"
+                    :color="lession.color"
+                    @click="handleSetCurrentLession(lession)"
+                />
+            </div>
         </v-list>
     </v-navigation-drawer>
 </template>

@@ -21,13 +21,13 @@ const lessions = <Lession[]>[
         title: 'Aplicación de los Tintes Capilares', 
         image: '2-min.jpg',
         size: 3,
-        index: 3
+        index: 1
     },
     {
         title: 'Clasificación de los Tintes Capilares', 
         image: '3-min.jpg',
         size: 6,
-        index: 6
+        index: 2
     }
 ];
 </script>
